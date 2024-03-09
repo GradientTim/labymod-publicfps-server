@@ -1,0 +1,10 @@
+services:
+  fps-server:
+    build:
+      dockerfile: Dockerfile
+    environment:
+      - AUTH_TOKEN=PLEASE_OVERRIDE_THIS_WITH_A_SECRET_TOKEN_THANK_YOU
+      - PORT=9412
+      - HOSTNAME=0.0.0.0
+    ports:
+      - 9412:9412
